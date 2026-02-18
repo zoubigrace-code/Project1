@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Business Name</title>
+    <style>
+        /* --- General Reset and Box Sizing --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* --- Header/Navigation Bar --- */
+        .header {
+            background-color: #3c7d8e; /* Teal-blue color */
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f0f0f0;
+        }
+
+        /* --- Hero Section (The main image/banner area) --- */
+        .hero {
+            position: relative;
+            height: 600px; /* Adjust as needed */
+            background: url(licensed-image.jpeg) no-repeat center center/cover; /* Placeholder for your office image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Dark overlay for better text readability */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2; /* Ensures content is above the overlay */
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+            padding: 40px 60px;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+
+        .hero-content p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        .btn-contact {
+            background-color: #ec6e57; /* Orange-red button */
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        .btn-contact:hover {
+            background-color: #d15d48;
+        }
+
+        /* --- Main Content Sections --- */
+        .section {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .section-header {
+            font-size: 2em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        /* --- Services Section --- */
+        .services-section {
+            background-color: white;
+        }
+
+        .services-section .section-header {
+            color: #4682b4; /* Steel Blue */
+        }
+
+        .services-list {
+            list-style: none;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .services-list li {
+            margin-bottom: 5px;
+        }
+
+        /* --- About Us Section --- */
+        .about-section {
+            background-color: #f5f5f5; /* Light gray background */
+            padding: 40px 5%;
+        }
+
+        .about-section .section-header {
+            color: #8fbc8f; /* Dark Sea Green */
+        }
+
+        .about-content {
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        /* --- Contact Us Section --- */
+        .contact-section {
+            background-color: white;
+            padding-bottom: 40px;
+        }
+
+        .contact-section .section-header {
+            color: #cd5c5c; /* Indian Red */
+        }
+
+        .contact-details {
+            margin-top: 20px;
+            font-size: 1.1em;
+            line-height: 2;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background-color: #3c7d8e; /* Matching the header color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-title">Our Business Name</div>
+        <nav class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Business</h1>
+            <p>Your one-stop solution for all your needs.</p>
+            <a href="#contact" class="btn-contact">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="services" class="section services-section">
+        <h2 class="section-header">Our Services</h2>
+        <p>We offer a wide range of services to help your business grow:</p>
+        <ul class="services-list">
+            <li>Consulting Services</li>
+            <li>Professional Training</li>
+            <li>Marketing and Advertising Solutions</li>
+        </ul>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2 class="section-header">About Us</h2>
+        <div class="about-content">
+            <p>We are a dedicated team with over 10 years of experience in business development and management. Our mission is to provide high-quality services tailored to each client's unique needs.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-header">Contact Us</h2>
+        <div class="contact-details">
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@ourbusiness.com</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2023 Small Business. All rights reserved.
+    </footer>
+
+</body>
+</html>
